@@ -1,0 +1,17 @@
+header {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: DarkSalmon;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    background-color: DarkSalmon;
+    color: white;
+}
