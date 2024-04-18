@@ -1,17 +1,50 @@
-header {
-    display: block;
+.header {
+    padding: 1.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100wh;
+    height: 3rem;
+    background-color: rgb(74, 146, 80);
+}
+
+.imgHeader {
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+.listHeaderOl{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main {
+    width: 100wh;
+    height: 100vh;
 }
 
 footer {
-    text-align: center;
-    padding: 15px;
-    background-color: DarkSalmon;
-    color: white;
+    padding: 1.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100wh;
+    height: 9vh;
+    background-color: rgb(74, 146, 80)
 }
 
-h1 {
-    text-align: center;
-    padding: 15px;
-    background-color: DarkSalmon;
+.listFooter {
+    display: flex;
+    flex-direction: row;
+    column-gap: 6rem;
     color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
