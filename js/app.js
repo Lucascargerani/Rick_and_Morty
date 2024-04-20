@@ -22,7 +22,7 @@ axios.get('https://rickandmortyapi.com/api/character')
       namePerson.classList.add('infoDiv');
       img.classList.add('iconPersons');
       especie.classList.add('especie');
-      characterDiv.appendChild(img);7
+      characterDiv.appendChild(img);
       characterDiv.appendChild(namePerson);
       characterDiv.appendChild(especie);
 

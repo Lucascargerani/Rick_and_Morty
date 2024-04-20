@@ -37,10 +37,10 @@ main {
 }
 
 .charactersDiv {
-    height: 14.5rem;
-    width: 12.5rem;
+    height: 15rem;
+    width: 14.1rem;
     border-radius: 7px;
-    margin: 4rem; 
+    margin: 1.5rem; 
     color: black;
     font-size: 26px;
     font-weight: bold;
@@ -89,17 +89,16 @@ footer {
 
 .infoDiv {
     display: flex;
-    height: 4px;
+    height: 16px;
     width: 320px;
     color: black;
     padding: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .iconPersons {
-    height: 277px;
-    width: 380px;
+    height: 285px;
+    width: 320px;
     object-fit: none;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -108,9 +107,8 @@ footer {
 
 .especie {
     display: flex;
-    height: 60px;
+    height: 15px;
     width: 320px;
     color: black;
     padding: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
