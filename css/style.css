@@ -29,6 +29,13 @@ main {
     height: auto;
 }
 
+.divButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .divPrincipal {
     display: flex;
     flex-direction: row;
