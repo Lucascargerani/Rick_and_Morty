@@ -23,17 +23,44 @@
     font-size: 26px;
     font-weight: bold;
 }
- 
+
+.Filters {
+
+}
+
+#divButtons{
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:160px;
+    height:28px;
+  }
+  
+  #txtName{
+    float:right;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:16px;
+    border: cadetblue;
+    width:120px;
+  }
+  
+  #divButtons img{
+    display: flex;
+    height: 25px;
+    width: 28px;
+    object-fit: contain;
+  }
+
+  #divSpecies {}
+
+  #divGender {}
+
+  #divStatus {}
+
 main {
     display: flex;
     height: auto;
-}
-
-.divButtons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .divPrincipal {

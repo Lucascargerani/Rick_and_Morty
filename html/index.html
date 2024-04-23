@@ -27,15 +27,38 @@
     </div>
   </div>
 
-  <main>
+  <main id="Filters">
     <div id="divButtons">
-      <button aria-label="buttonName"> Name </button>
-      <button aria-label="buttonSpecies"> Species </button>
-      <button aria-label="buttonGender"> Gender </button>
-      <button aria-label="buttonStatus"> Status </button>
+      <input type="text" id="txtName" placeholder="Filter by name...">
+      <img src="../image/searchalien.webp" alt="searchalien">
+    </div>
+
+    <div class="divSpecies">
+      <select aria-label="Species" name="Species" id="select_Species" class="species-select">
+          <option>Species</option>
+      </select>
+    </div>
+
+    <div class="divGendert">
+      <select aria-label="Gender" name="period" id="select_Gender" class="gender-select">
+          <option>Gender</option>
+      </select>
+    </div>
+
+    <div class="divStatus">
+      <select aria-label="Status" name="Status" id="select_status" class="status-select">
+          <option>Status</option>
+      </select>
+    </div>
+
+  </main>
+
+  <main>
 
     <div id="divPrincipal"></div>
+
   </main>
+
 
   <footer>
     <div class="footerDiv">
