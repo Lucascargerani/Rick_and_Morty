@@ -24,42 +24,99 @@
     font-weight: bold;
 }
 
-.Filters {
+.imgR {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 
+#Filters {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 20px;
 }
 
 #divButtons{
-    background-color:#E0EEEE;
-    border:solid 2px #5F9EA0;
-    border-radius:10px;
-    width:160px;
-    height:28px;
-  }
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 360px;
+    height: 68px;
+
+}
   
-  #txtName{
+#txtName{
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
     float:right;
     background-color:transparent;
     padding-left:5px;
-    font-size:16px;
     border: cadetblue;
     width:120px;
-  }
-  
-  #divButtons img{
+}
+
+#divButtons input{
+    width: 80%;
+    height: 100%;
+    &:focus{
+        outline: none;
+    }
+}
+#divButtons img{
     display: flex;
     height: 25px;
     width: 28px;
     object-fit: contain;
-  }
+    align-self: center;
+    margin-right: 15px;
+    margin-left: 15px;
 
-  #divSpecies {}
+}
 
-  #divGender {}
+#divSpecies {
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    padding: 17px;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 270px;
+    height: 35px;
+}
+select{
+    border:none;
+    width: 100%;
+}
 
-  #divStatus {}
+
+#divGender {
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    padding: 17px;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 270px;
+    height: 35px;
+}
+
+#divStatus {
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    padding: 17px;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 270px;
+    height: 35px;
+}
 
 main {
-    display: flex;
+    display: block;
     height: auto;
 }
 
@@ -71,8 +128,8 @@ main {
 }
 
 .charactersDiv {
-    height: 15rem;
-    width: 14.1rem;
+    height: 16rem;
+    width: 12.1rem;
     border-radius: 7px;
     margin: 1.5rem; 
     color: black;
@@ -122,12 +179,14 @@ footer {
 }
 
 .infoDiv {
+    font-family: "Roboto Mono", monospace;
     display: flex;
-    height: 16px;
+    height: 25px;
     width: 320px;
     color: black;
-    padding: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    padding: 10px;
+    text-wrap: nowrap;
+    font-size:22px;
 }
 
 .iconPersons {
@@ -140,6 +199,9 @@ footer {
 }
 
 .especie {
+    font-family: "Roboto Mono", monospace;
+    font-weight: lighter;
+    font-size: 18px;
     display: flex;
     height: 15px;
     width: 320px;
