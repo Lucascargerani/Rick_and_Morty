@@ -116,22 +116,27 @@ select{
 }
 
 main {
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: auto;
+    justify-content: center;
+    margin: auto;
+    
 }
 
 .divPrincipal {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
-}
+    display: flex; justify-content: space-between;
+ }
 
 .charactersDiv {
     height: 16rem;
     width: 12.1rem;
     border-radius: 7px;
-    margin: 1.5rem; 
+    margin: 1rem; 
     color: black;
     font-size: 26px;
     font-weight: bold;
