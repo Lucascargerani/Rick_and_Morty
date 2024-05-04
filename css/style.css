@@ -30,7 +30,7 @@
     justify-content: center;
 }
 
-#Filters {
+.Filters {
     padding: 15px;
     display: flex;
     flex-direction: row;
@@ -124,28 +124,21 @@ main {
     
 }
 
-.divPrincipal {
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    align-items: center;
-    display: flex; justify-content: space-between;
- }
-
 .charactersDiv {
-    height: 16rem;
-    width: 12.1rem;
-    border-radius: 7px;
-    margin: 1rem; 
-    color: black;
-    font-size: 26px;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 2px 3px 3px 3px #d1d0d0;
-    display: flex; justify-content: space-between;
-}
+        height: 400px;
+        width: 20%;
+        margin: 12px;
+        text-align: center;
+        border-radius: 7px;
+        color: black;
+        font-size: 26px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 2px 3px 3px 3px #d1d0d0;
+        display: flex; justify-content: space-between;
+      }
 
 footer {
     display: flex;
