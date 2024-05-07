@@ -1,9 +1,4 @@
-var pageIndex = 1;
-axios.get('https://rickandmortyapi.com/api/character?limit=8',{
-  params:{
-    page: pageIndex
-  }
-})
+axios.get('https://rickandmortyapi.com/api/character')
 .then(response =>{
     const characters = response.data.results;
     const charactersListDiv = document.getElementById('charactersList');
@@ -16,33 +11,43 @@ axios.get('https://rickandmortyapi.com/api/character?limit=8',{
 
     const statu = document.getElementById('select_Status');
     specie.innerHTML = ''
-    // const specieOption = characters.map(characters => characters.specie);
-    // const uniqueOption = specieOption.filter((specie, index) => specie && specie.indexOf(specie === index));
 
-    //criar uma variavel tipo array
-    //adicionar as specie no array 
-    //criar outro array com o metodo Set
-
-
-    let specieOption = characters.species
-    const newSpecie = [... new Set(specieOption)];
-
-
+    
+    const newSpecie = new Set();
+    characters.forEach(character => {
+      newSpecie.add(character.species)
+    })
     newSpecie.forEach(newSpecie => {
       const optionSpecie = document.createElement('option');
       optionSpecie.textContent = newSpecie
       specie.appendChild(optionSpecie);
     });
-      // const optionGender = document.createElement('option');
-      // optionGender.textContent = characters.gender;
-      // gender.appendChild(optionGender);
 
-      // const optionStatus = document.createElement('option');
-      // optionStatus.textContent = characters.status;
-      // statu.appendChild(optionStatus);
+    const newGender = new Set();
+    characters.forEach(character => {
+      newGender.add(character.gender)
+    });
+
+    newGender.forEach(newGender => {
+      const optionGender = document.createElement('option');
+      optionGender.textContent = newGender;
+      gender.appendChild(optionGender);
+    });
 
 
-    
+    const newStatus = new Set ();
+    characters.forEach(character => {
+      newStatus.add(character.status);
+    });
+
+    newStatus.forEach(newStatus => {
+      const optionStatus = document.createElement('option');
+      optionStatus.textContent = newStatus;
+      statu.appendChild(optionStatus);
+    });
+
+
+      
 
     let i = 0;
     let count = 8;
@@ -73,3 +78,8 @@ axios.get('https://rickandmortyapi.com/api/character?limit=8',{
     i++;
      }
     })
+
+    const txtName = document.getElementById('txtName');
+    txtName.addEventListener('input', function(event) {
+      let filter = event.target.value;
+    });
