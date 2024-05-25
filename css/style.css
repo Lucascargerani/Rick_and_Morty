@@ -209,6 +209,5 @@ footer {
 }
 #charactersList{
     display: flex;
-    width: 70rem;
     justify-content: center;
 }
